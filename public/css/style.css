@@ -1,0 +1,510 @@
+/* Global */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+/* Header */
+
+.header-container {
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.header-container-1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    width: 50%;
+}
+
+.search-container {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.bar-search {
+    width: 100%;
+    border: none;
+    border-radius: 0.4rem;
+    height: 2.5rem;
+    padding-left: 10px;
+}
+
+.bar-search::placeholder {
+    text-align: center;
+}
+
+.container-text-cuotas {
+    margin: auto;
+}
+
+.button-search {
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    border: none;
+    background-color: white;
+}
+
+.container-text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 1rem;
+}
+
+
+/* Header Navbar */
+
+.navbar-container {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li a {
+    text-decoration: none !important;
+    color: #000;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+/* Header burguer menu */
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #044ac3;
+    margin: auto;
+    color: white;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 23px;
+}
+
+.fa-hand-holding-dollar {
+    padding-right: 0.4rem;
+}
+
+.fa-address-card,
+.fa-right-to-bracket,
+.fa-cart-shopping {
+    padding-left: 0.2rem;
+}
+
+
+.banner-container {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+/* Seccion Main */
+
+/* Global */
+main {
+    margin: auto;
+    width: 90%;
+}
+
+.tittle {
+    font-size: 24px;
+    color: #666;
+    margin: 1rem 0 1rem 0;
+}
+
+.products {
+    background-color: white;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.products-container {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+.products-flex {
+    display: flex;
+    align-items: center;
+}
+
+.products-flex-price {
+    width: 30%;
+}
+
+.price {
+    font-size: 18px;
+}
+
+.products-flex-discount {
+    width: 70%;
+}
+
+.discount-text {
+    font-size: 18px;
+    padding-left: 1.5rem;
+    color: #39b54a;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    display: none;
+    margin-top: 1rem;
+}
+
+.text-buy {
+    font-size: 16px;
+    color: #39b54a;
+    margin-top: 1rem;
+    font-weight: lighter;
+}
+
+/* Efectos a etiquetas */
+
+main section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+main section article i {
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 4.3rem;
+    right: 2rem;
+}
+
+.fa-truck {
+    color: #39b54a;
+    transition: all 2s;
+}
+
+/* Efectos y transiciones  */
+
+.products:hover {
+
+    .description {
+        display: block;
+    }
+
+    .text-buy {
+        display: none;
+    }
+
+    .fa-truck {
+        rotate: -90deg;
+    }
+}
+
+/* Footer */
+
+footer section {
+    text-align: center;
+    padding: 10px;
+}
+
+footer section header {
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+footer section article strong {
+    font-size: 16px;
+}
+
+footer {
+    background-color: white;
+    margin-top: 1rem;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.fa-credit-card,
+.fa-gift,
+.fa-user-shield {
+    color: #044ac3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: all 500ms;
+}
+
+.fa-credit-card:hover,
+.fa-gift:hover,
+.fa-user-shield:hover {
+    color: #39b54a;
+}
+
+/* RESPONSIVE INDEX */
+
+/* MEDIAS DEL HEADER */
+
+@media (min-width: 768px) {
+    .header-container-1 {
+        flex-wrap: nowrap;
+    }
+
+    .logo-container {
+        width: 35%;
+    }
+
+    .search-container {
+        width: 30%;
+    }
+
+    .container-text-cuotas {
+        width: 35%;
+    }
+
+    .burger-menu-wrapper {
+        display: none;
+    }
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-container ul {
+        display: flex;
+    }
+
+    .navbar-container li {
+        margin: 0 5px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .navbar-container li {
+        margin: 0 10px;
+    }
+
+    .navbar-container a {
+        font-size: 17px;
+    }
+
+    .navbar-container {
+        margin-top: 40px;
+    }
+
+    .container-text {
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0 1rem;
+    }
+
+    .logo {
+        width: 250px;
+    }
+}
+
+/* MEDIAS MAIN*/
+
+@media (min-width: 768px) {
+
+    .products {
+        width: 48%;
+        transition: all 500ms;
+    }
+
+    .products:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        scale: 1.02;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .products {
+        width: 22%;
+    }
+
+    main section article i {
+        margin-left: 15%;
+    }
+}
+
+/* Vista Login */
+
+.form-tittle {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.container-form-login {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0rem;
+}
+
+.container-form-login form {
+    width: 80%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.input-text {
+    border: 3px solid #ebebeb;
+    border-radius: 0.4rem;
+    height: 2.5rem;
+    width: 80%;
+    padding: 0rem 1rem;
+    display: block;
+    margin: auto;
+}
+
+.article-login {
+    margin: 2rem;
+}
+
+.button-send {
+    border-radius: 0.4rem;
+    background-color: #044ac3;
+    color: white;
+    border: none;
+    width: 6rem;
+    height: 2.5rem;
+    transition: all 500ms;
+    display: block;
+    margin: auto;
+}
+
+.button-send:hover {
+    background-color: #0022AA;
+}
+
+
+/* RESPONSIVE LOGIN */
+@media (min-width: 768px) {
+    .container-form-login form {
+        width: 60%;
+    }
+
+    .container-form-login {
+        margin: 3.5rem 0rem;
+    }
+}
+
+/* Vista REGISTER */
+
+.form-tittle {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.container-form-register {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form-register form {
+    margin-left: 10vh;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5vh 0vh 2vh 0vh;
+}
+
+.input-text {
+    border: 3px solid #ebebeb;
+    border-radius: 0.4rem;
+    height: 2.5rem;
+    width: 100%;
+    padding: 0rem 1rem;
+}
+
+.subir-archivo {
+    width: 90%;
+}
+
+.container-articulo-form {
+    margin: 1rem;
+}
+
+.container-categories {
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+}
+
+.container-categories article {
+    margin-bottom: 0.5rem;
+}
+
+.contenedor-categorias article input {
+    margin-left: 1rem;
+}
+
+.label-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.container-label-text {
+    margin-bottom: 1rem !important;
+}
+
+.input-ratio-user input {
+    margin: 0rem 1rem;
+}
+
+.button {
+    border-radius: 6px;
+    background-color: #044ac3;
+    padding: 5px 10px;
+    color: white;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    border: none;
+}
